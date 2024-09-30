@@ -1,0 +1,62 @@
+/* Add this to your CSS file */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card .successIcon {
+    color: #28a745; /* Green color for the check circle */
+    font-size: 10rem;
+  }
+
+  .card .failIcon {
+    color: red; /* Green color for the check circle */
+    font-size: 10rem;
+  }
+  
+  .card h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #343a40;
+  }
+  
+  .card p {
+    color: #6c757d;
+    margin-top: 0.5rem;
+  }
+  
+  .card .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .card .buttons a {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .card .buttons .btn-primary {
+    background-color: #343a40; /* Black button */
+    color: #ffffff;
+  }
+  
+  .card .buttons .btn-outline {
+    border: 1px solid #343a40; /* Black border */
+    color: #343a40;
+  }
+  

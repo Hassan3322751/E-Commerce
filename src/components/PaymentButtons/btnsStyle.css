@@ -1,0 +1,30 @@
+.cardBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 5px 0px;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-family: cursive;
+}
+.cardBtn:hover{
+    cursor: pointer;
+    background-color: #1276f0
+}
+
+.jazzBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin: 5px 0px;
+    background-color: gold;
+    border: none;
+}
+.jazzBtn:hover{
+    cursor: not-allowed;
+}
