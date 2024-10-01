@@ -53,7 +53,7 @@ const allItems = [
     color: 'white',
   },
   {
-    title: 'Prods',
+    title: 'Products',
     imageUrl: '/icons/foods.svg',
     url: '/admin/foods',
     forAdmin: true,
