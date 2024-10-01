@@ -34,8 +34,8 @@
 .buttons {
   display: flex;
   justify-content: center;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   margin: 2rem;
   width: 35rem;
+  max-width: min-content;
 }

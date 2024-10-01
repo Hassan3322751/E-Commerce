@@ -120,3 +120,12 @@
   opacity: 0.8;
   cursor: pointer;
 }
+
+@media (max-width: 425px){
+  .container {
+    flex-direction: column-reverse;
+  }
+  .checkout{
+    width: 98%;
+  }
+}

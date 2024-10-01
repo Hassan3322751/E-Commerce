@@ -5,6 +5,8 @@ import { useLoading } from './hooks/useLoading';
 import { setLoadingInterceptor } from './interceptors/loadingInterceptor';
 import { useEffect } from 'react';
 
+import './Responsiveness.css'
+
 function App() {
   const { showLoading, hideLoading } = useLoading();
 

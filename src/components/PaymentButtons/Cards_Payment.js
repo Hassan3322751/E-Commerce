@@ -2,12 +2,9 @@ import { loadStripe } from "@stripe/stripe-js"
 import { pay } from '../../services/orderService';
 import { toast } from 'react-toastify';
 
-import { useCart } from '../../hooks/useCart';
-
 import './btnsStyle.css'
 
 export default function CARDS_PAYMENT({ order }) {
-    const { clearCart } = useCart();
 
     const CARD_PAY = async() => {
         if (!order.addressLatLng) {
@@ -24,17 +21,15 @@ export default function CARDS_PAYMENT({ order }) {
         }
         const orderStatus = await pay(body, headers)
         toast.error(orderStatus.rawType)
-        console.log(orderStatus)
+
         const result = stripe.redirectToCheckout({
             sessionId: orderStatus.id
         });
-        console.log(result)
         
         if (result.error){
             toast.error(result.error)
             return
         }
-        clearCart()
     }
     return(
         <button onClick={() => CARD_PAY()}

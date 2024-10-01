@@ -98,3 +98,9 @@
   opacity: 0.9;
   cursor: pointer;
 }
+
+@media (max-width: 1061px){
+  .image {
+    height: 22rem;
+  }
+}

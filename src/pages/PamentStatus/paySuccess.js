@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom"
+import { useEffect } from "react";
+
+import { useCart } from '../../hooks/useCart';
 import './success.css'
 
 export default function PaySuccess() {
+  const { clearCart } = useCart();
+  useEffect(() => {
+    clearCart()
+  }, [])
+  
   return (
     <div className="container">
       <div className="card">

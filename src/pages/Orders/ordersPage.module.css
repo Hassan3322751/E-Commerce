@@ -54,6 +54,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   border-bottom: 1px solid whitesmoke;
   border-radius: 1rem 1rem 0 0;
   color: grey;
@@ -63,7 +64,7 @@
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
 }
 
 .items img {
@@ -86,4 +87,16 @@
 }
 .price {
   color: green;
+}
+
+@media (max-width: 450px){
+  .all_status{
+    flex-wrap: wrap;
+    height: max-content;
+  }
+
+  .all_status a{
+    width: 7rem;
+    height: 2.5rem;
+  }
 }

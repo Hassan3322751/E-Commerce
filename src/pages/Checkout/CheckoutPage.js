@@ -38,8 +38,7 @@ export default function CheckoutPage() {
   };
 
   return (
-    <div style={{display: 'flex', justifyContent: 'center'}}>
-      <form onSubmit={handleSubmit(submit)}>
+      <form onSubmit={handleSubmit(submit)} style={{width: '35rem', margin: 'auto', maxWidth: '100%'}}>
         <div className={classes.content}>
           <Title title="Order Form" fontSize="1.6rem" />
           <div className={classes.inputs}>
@@ -58,7 +57,7 @@ export default function CheckoutPage() {
           </div>
           <OrderItemsList order={order} />
         </div>
-        <div>
+        <div className={classes.map}>
           <Title title="Choose Your Location" fontSize="1.6rem" />
           <Map
             location={order.addressLatLng}
@@ -76,11 +75,10 @@ export default function CheckoutPage() {
               text="Proceed To Payment"
               width="100%"
               height="3rem"
-              backgroundColor={'black'}
+              backgroundColor={'#2177E9'}
             />
           </div>
         </div>
       </form>
-    </div>
   );
 }
