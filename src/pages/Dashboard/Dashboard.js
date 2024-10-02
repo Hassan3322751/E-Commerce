@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useAuth } from '../../hooks/useAuth';
 import classes from './dashboard.module.css';
 import { Link } from 'react-router-dom';
