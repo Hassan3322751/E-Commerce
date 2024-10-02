@@ -51,17 +51,13 @@ export default function AppRoutes() {
       <Route
         path="/PaymentFailed"
         element={
-          <AuthRoute>
             <PayFailed />
-          </AuthRoute>
         }
       />
       <Route
         path="/PaymentSuccess"
         element={
-          <AuthRoute>
             <PaySuccess />
-          </AuthRoute>
         }
       />
       <Route
