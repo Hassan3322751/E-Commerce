@@ -9,44 +9,45 @@ import CARDS_PAYMENT from '../../components/PaymentButtons/Cards_Payment';
 import JAZZ_PAYMENT from '../../components/PaymentButtons/Jazz_Payment';
 
 export default function PaymentPage() {
-  const [order, setOrder] = useState();
+  const [order, setOrder] = useState(null);
 
   useEffect(() => {
     getNewOrderForCurrentUser().then(data => setOrder(data));
   }, []);
 
-  if (!order) return;
+  if (order === null) return <div>Loading....</div>; 
+  // if (!order) return;
 
   return (
     <>
-      <div className={classes.container}>
-        <div className={classes.content}>
-          <Title title="Order Form" fontSize="1.6rem" />
-          <div className={classes.summary}>
-            <div>
-              <h3>Name:</h3>
-              <span>{order.name}</span>
+        <div className={classes.container}>
+          <div className={classes.content}>
+            <Title title="Order Form" fontSize="1.6rem" />
+            <div className={classes.summary}>
+              <div>
+                <h3>Name:</h3>
+                <span>{order.name}</span>
+              </div>
+              <div>
+                <h3>Address:</h3>
+                <span>{order.address}</span>
+              </div>
             </div>
-            <div>
-              <h3>Address:</h3>
-              <span>{order.address}</span>
-            </div>
+            <OrderItemsList order={order} />
           </div>
-          <OrderItemsList order={order} />
-        </div>
 
-        <div className={classes.map}>
-          <Title title="Your Location" fontSize="1.6rem" />
-          <Map readonly={true} location={order.addressLatLng} />
-        </div>
+          <div className={classes.map}>
+            <Title title="Your Location" fontSize="1.6rem" />
+            <Map readonly={true} location={order.addressLatLng} />
+          </div>
 
-        <div className={classes.buttons_container}>
-          <div className={classes.buttons}>
-              <CARDS_PAYMENT order={order}/>
+          <div className={classes.buttons_container}>
+            <div className={classes.buttons}>
+              <CARDS_PAYMENT order={order} />
               <JAZZ_PAYMENT />
+            </div>
           </div>
         </div>
-      </div>
     </>
   );
 }

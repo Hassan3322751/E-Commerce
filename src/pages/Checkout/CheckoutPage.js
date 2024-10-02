@@ -33,8 +33,11 @@ export default function CheckoutPage() {
       return;
     }
 
-    await createOrder({ ...order, name: data.name, address: data.address });
-    navigate('/payment')
+    await createOrder({ ...order, name: data.name, address: data.address }).then(() => {
+      navigate('/payment')
+    }).catch(() => {
+      toast.info("Please try again")
+    });
   };
 
   return (
