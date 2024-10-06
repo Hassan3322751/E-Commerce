@@ -1,20 +1,22 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import CartPage from './pages/Cart/CartPage';
-import FoodPage from './pages/Food/FoodPage';
 import HomePage from './pages/Home/HomePage';
-import LoginPage from './pages/Login/LoginPage';
-import RegisterPage from './pages/Register/RegisterPage';
 import AuthRoute from './components/AuthRoute/AuthRoute';
 import OrderTrackPage from './pages/OrderTrack/OrderTrackPage';
-import ProfilePage from './pages/Profile/ProfilePage';
 import OrdersPage from './pages/Orders/OrdersPage';
+
+import LoginPage from './pages/Login/LoginPage';
+import RegisterPage from './pages/Register/RegisterPage';
+import ProfilePage from './pages/Profile/ProfilePage';
 import Dashboard from './pages/Dashboard/Dashboard';
 import AdminRoute from './components/AdminRoute/AdminRoute';
-import FoodsAdminPage from './pages/FoodsAdmin/FoodsAdminPage';
-import FoodEditPage from './pages/FoodEdit/FoodEditPage';
 import UsersPage from './pages/UsersPage/UsersPage';
 import UserEditPage from './pages/UserEdit/UserEditPage';
+
+import FoodsAdminPage from './pages/FoodsAdmin/FoodsAdminPage';
+import FoodEditPage from './pages/FoodEdit/FoodEditPage';
+import FoodPage from './pages/Food/FoodPage';
 
 import CheckoutPage from './pages/Checkout/CheckoutPage';
 import PaymentPage from './pages/Payment/PaymentPage';

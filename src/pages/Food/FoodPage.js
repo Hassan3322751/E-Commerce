@@ -7,6 +7,7 @@ import { useCart } from '../../hooks/useCart';
 import { getById } from '../../services/foodService';
 import classes from './foodPage.module.css';
 import NotFound from '../../components/NotFound/NotFound';
+
 export default function FoodPage() {
   const [food, setFood] = useState({});
   const { id } = useParams();

@@ -35,6 +35,7 @@ export default function CheckoutPage() {
 
     if(!data.address || data.address === '') {
       toast.info("Proceed Now")
+      window.location.reload()
       return
     }
 
