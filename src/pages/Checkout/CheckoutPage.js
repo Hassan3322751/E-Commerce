@@ -33,6 +33,11 @@ export default function CheckoutPage() {
       return;
     }
 
+    if(!data.address || data.address === '') {
+      toast.info("Proceed Now")
+      return
+    }
+
     await createOrder({ ...order, name: data.name, address: data.address }).then(() => {
       navigate('/payment')
     }).catch(() => {

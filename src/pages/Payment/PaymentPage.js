@@ -15,11 +15,11 @@ export default function PaymentPage() {
     getNewOrderForCurrentUser().then(data => setOrder(data));
   }, []);
 
-  if (order === null) return <div>Loading....</div>; 
-  // if (!order) return;
-
   return (
     <>
+      {
+       !order ? <span style={{textAlign: 'center', margin: '10px 0px'}}>Loading</span>
+          :   
         <div className={classes.container}>
           <div className={classes.content}>
             <Title title="Order Form" fontSize="1.6rem" />
@@ -48,6 +48,7 @@ export default function PaymentPage() {
             </div>
           </div>
         </div>
+      }
     </>
   );
 }
