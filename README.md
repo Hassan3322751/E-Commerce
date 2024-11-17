@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <h1>E-Commerce Project <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/shopping-trolley_1f6d2.png" alt="shopping cart" width="30"></h1>
+  <h1>E-Commerce Project </h1>
 
   <h2>Project Description</h2>
   <p>E-Commerce is a Node.js application providing backend services for an e-commerce platform.</p>
