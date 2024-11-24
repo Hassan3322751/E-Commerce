@@ -1,70 +1,73 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-## Available Scripts
+  <h1>E-Commerce Project </h1>
 
-In the project directory, you can run:
+  <h2>Project Description</h2>
+  <p>E-Commerce is a Node.js application providing backend services for an e-commerce platform.</p>
 
-### `npm start`
+  <hr>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <h2>✨ Features</h2>
+  <ul>
+    <li><strong>Product Management:</strong> CRUD operations for products.</li>
+    <li><strong>Order Processing:</strong> Handling orders and payments.</li>
+    <li><strong>Authentication:</strong> Secure user authentication using JWT.</li>
+    <li><strong>Database Integration:</strong> Integration with MongoDB for data storage.</li>
+  </ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <hr>
 
-### `npm test`
+  <h2>🚀 Getting Started</h2>
+  <ol>
+    <li><strong>Clone the Repository:</strong><br>
+      <code>git clone https://github.com/Hassan3322751/E-Commerce.git</code></li>
+    <li><strong>Navigate to the Project Directory:</strong><br>
+      <code>cd E-Commerce</code></li>
+    <li><strong>Install Dependencies:</strong><br>
+      <code>npm install</code></li>
+    <li><strong>Setup Environment Variables:</strong><br>
+      Create a <code>.env</code> file in the root directory with the following variables:<br>
+      <pre>PORT=3000<br>
+      MONGODB_URI=your-mongodb-uri<br>
+      JWT_SECRET=your-jwt-secret</pre>
+      Replace <code>your-mongodb-uri</code> with your MongoDB connection URI and <code>your-jwt-secret</code> with a secret key for JWT.</li>
+    <li><strong>Run the Application:</strong><br>
+      <code>npm start</code><br>
+      This will start the server on port 3000 by default.</li>
+  </ol>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <hr>
 
-### `npm run build`
+  <h2>📝 Usage</h2>
+  <p>Endpoints:</p>
+  <ul>
+    <li><code>/products</code>: CRUD operations for products.</li>
+    <li><code>/orders</code>: Manage orders and payments.</li>
+    <li><code>/auth</code>: User authentication and token management.</li>
+  </ul>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <hr>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  <h2>🤝 Contributions</h2>
+  <p>Contributions are welcome! Fork the repository and submit pull requests to enhance E-Commerce.</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  <hr>
 
-### `npm run eject`
+  <h2>📞 Contact</h2>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:mianhassan155156@gmail.com">mianhassan155156@gmail.com</a></li>
+    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hassan-raza-a05500285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Hassan Raza</a></li>
+    <li><strong>GitHub:</strong> <a href="https://github.com/Hassan3322751">Hassan3322751</a></li>
+    <li><strong>Instagram:</strong> <a href="https://instagram.com/mianhassan6964">mianhassan6964</a></li>
+  </ul>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</body>
+</html>
