@@ -12,13 +12,19 @@ export default function PaymentPage() {
   const [order, setOrder] = useState(null);
 
   useEffect(() => {
-    getNewOrderForCurrentUser().then(data => setOrder(data));
+    getNewOrderForCurrentUser().then((data) => {
+      setOrder(data)
+    }
+  ).catch((err) => {
+    window.location.reload()
+  })
   }, []);
 
   return (
     <>
       {
-       !order ? <span style={{textAlign: 'center', margin: '10px 0px'}}>Loading</span>
+       !order ? 
+       <span style={{textAlign: 'center', margin: '10px 0px'}}>Loading</span>
           :   
         <div className={classes.container}>
           <div className={classes.content}>
